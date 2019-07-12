@@ -1,6 +1,6 @@
 import random
 
-#system generate random 4 number in list
+#system generate random 4 numbers in list
 def sys():
 	ans = []
 	
@@ -9,7 +9,7 @@ def sys():
 		if not n in ans:
 			ans.append(n)
 
-	#print('--Debug System Generate Answer--')
+	#print('--Debug System Generated Answer--')
 	#print(ans)
 	return ans
 	
@@ -19,7 +19,7 @@ def input_check():
 		#check all input number are within the number scope (0~9)
 		if n>9:
 			return False
-		#check for duplicat number & length limitation (4)
+		#check for duplicate number & length limitation (4)
 		elif len(set(guess)) != 4:
 			return False
 	return True
