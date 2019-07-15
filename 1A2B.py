@@ -27,12 +27,14 @@ def input_check():
 #setting the answer value from sys() function
 answer = sys()
 game_on = True
+count = 0
 
 print('** Welcome to 1A2B game')
 print('** Please enter 4 numbers from 0 ~ 9 and separate by space')
 print('** For example: 1 2 3 4')
 	
 while game_on:
+	count += 1
 	user_input = input('** Enter your 4 numbers here: ')
 	
 	value_check = True
@@ -69,6 +71,7 @@ while game_on:
 	
 	if a == 4: 
 		print('** Good Job! You got it!')
+		print('** You guessed {} times!.format(count))
 		game_on = False
 	else: 
 		print('** Keep trying')
